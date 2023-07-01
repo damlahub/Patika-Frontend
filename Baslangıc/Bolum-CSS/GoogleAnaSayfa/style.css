@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+header{
+    width: 100%;
+    background-color: white;
+    font-size: .8em;
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: 15px;
+}
+header ul li{
+    list-style: none;
+    padding: 5px 15px;
+}
+header ul li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.816);
+}
+header ul li a img{
+    width: 18px;
+    opacity: .8;
+}
+header .blue-box{
+    padding: 10px 20px;
+    background-color: #1A73E8;
+    color: white;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+section#google{
+    width: 100%;
+    height: 61vh;
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: center;
+    color:black;
+}
+section#google img{
+    margin: 20px;
+}
+section#google form input{
+    width: 600px;
+    border: 1px solid rgba(0, 0, 0, 0.384);
+    border-radius: 20px;
+    padding: 15px;
+    text-indent: 35px;
+}
+.input-icon {
+    position: relative;
+}
+.input-icon .search-icon {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    opacity: .7;
+}
+.input-icons {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+
+    top: -7px; /* İkonun dikey hizalaması */
+    right: 5px; 
+}
+.input-icons img{
+    width: 16px;
+    height: 20px;
+}
+section#google .buttons {
+    margin-top: 30px;
+}
+section#google .buttons a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.633);
+    border: 1px solid white;
+    padding: 10px;
+    font-size: 0.9em;
+    margin: 20px;
+    border-radius: 5px;
+}
+section#google .buttons a:hover{
+    border: 1px solid rgba(0, 0, 0, 0.145);
+    padding: 10px;
+}
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+section#footer-top{
+    width: 100%;
+    background-color: #f2f2f2;
+    border-bottom: 2px solid #dddfe2;
+    padding: 20px;
+
+}
+section#footer-top p{
+    opacity: .6;
+}
+footer p img{
+    width:12%;
+    padding-right: 10px;
+}
+footer p{
+    opacity: .6;
+}
+section#footer-bottom{
+    width: 100%;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-nav-right ul , .footer-nav-left ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.footer-nav-right ul li, .footer-nav-left ul li{
+    list-style: none;
+    padding: 20px;
+}
+.footer-nav-right ul li a, .footer-nav-left ul li a{
+    text-decoration: none;
+    color: black;
+    opacity: .6;
+}
