@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <section id="left-section">
+            <img src="Images/saveourearth.png">
+        </section>
+        <section id="center-section">
+            <header>
+                <h1>To Do List</h1>
+                <form id="todoForm">
+                    <input type="text" id="todoInput" placeholder="What will you do today?">
+                    <button type="submit" id="todoSub">Add</button>
+                    <button type="submit" id="delete-all">Delete All</button>
+                </form>
+            </header>
+            <main>
+                <section>
+                    <ul id="results">
+                        <li class="result">
+                            <p>Yapılacaklar</p>
+                            <button type="button" class="btn-remove">X</button>
+                        </li>
+                        <li class="result">
+                            <p class="full-text">Yapılacaklar</p>
+                            <button type="button" class="btn-remove">X</button>
+                        </li>
+                    </ul>
+                </section>
+            </main>
+        </section>
+        <section id="right-section">
+            <img src="Images/saveourearth.png">
+        </section>
+    </div>
+    <script src="app.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>
