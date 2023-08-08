@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            color: white;
+            
+        => ease – Yavaş bir başlangıç, ardından hızlı, daha sonra yavaş yavaş sona eren geçiş efekti belirtir. (Varsayılan)
+        => linear – Başlangıç ve bitişi aynı hızda bir geçiş efekti belirtir.
+        => ease-in – Yavaş bir başlangıç geçiş efekti belirtir.
+        => ease-out – Yavaş bir bitiş geçiş efekti belirtir.
+        => ease-in-out – Yavaş başlangıç-bitiş geçiş efekti belirtir.
+        => cubic-bezier(n,n,n,n) – Bezier yöntemi ile zaman belirlememizi sağlar.
+
+            
+            transition: width 2s ease .5s ;  //prop, duration, timing-function, delay
+            -webkit-transition: width 2s ease .5s ; //webkit tarayıcılarda calıssın
+            -moz-transition: width 2s ease .5s ;//mozilla tarayıcısında calıssın
+            -o-transition: width 2s ease .5s ;//opera tarayıcısında calıssın
+        }
+        div:hover{
+            width: 400px;
+        } */
+        @keyframes ornek {
+
+            /* from {
+                background-color: red;
+            }
+
+            to {
+                background-color: yellow;
+            }*/
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            background-color: red;
+            animation-name: ornek;
+            animation-duration: 4s;
+            animation-iteration-count: 3;
+            /*animasyon 3 kere tekrarlanacak infinite=> sonsuz*/
+            animation-direction: reverse;
+            /*animasyon yönünü belirtir*/
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h3>Hello World!</h3>
+    </div>
+</body>
+
+</html>
